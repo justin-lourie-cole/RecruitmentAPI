@@ -1,0 +1,35 @@
+# .NET build output
+bin/
+obj/
+*.user
+*.suo
+
+# IDE files
+.vs/
+.vscode/
+*.sln.iml
+
+# Environment files
+appsettings.*.json
+!appsettings.json
+.env
+
+# AWS credentials
+.aws/
+aws.credentials
+
+# Dependencies
+packages/
+*.nupkg
+
+# Logs
+*.log
+logs/
+
+# Test Results
+TestResults/
+[Cc]overage/
+
+# OS files
+.DS_Store
+Thumbs.db 
