@@ -1,3 +1,4 @@
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using RecruitmentAPI.Services;
 using Microsoft.AspNetCore.Http;
@@ -7,6 +8,7 @@ namespace RecruitmentAPI.Controllers;
 
 [ApiController]
 [Route("api/[controller]")]
+[Authorize]
 public class S3Controller : ControllerBase
 {
   private readonly S3Service _s3Service;

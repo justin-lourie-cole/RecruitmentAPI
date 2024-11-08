@@ -1,3 +1,4 @@
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using RecruitmentAPI.Services;
 using RecruitmentAPI.Models;
@@ -6,6 +7,7 @@ namespace RecruitmentAPI.Controllers;
 
 [ApiController]
 [Route("api/[controller]")]
+[Authorize]
 public class EmailController : ControllerBase
 {
   private readonly EmailService _emailService;

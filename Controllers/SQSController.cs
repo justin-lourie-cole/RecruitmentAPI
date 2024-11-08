@@ -1,3 +1,4 @@
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using RecruitmentAPI.Services;
 
@@ -5,6 +6,7 @@ namespace RecruitmentAPI.Controllers;
 
 [ApiController]
 [Route("api/[controller]")]
+[Authorize]
 public class SQSController : ControllerBase
 {
   private readonly SQSService _sqsService;

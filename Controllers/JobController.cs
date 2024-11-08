@@ -1,3 +1,4 @@
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 using RecruitmentAPI.Data;
@@ -5,6 +6,7 @@ using RecruitmentAPI.Models;
 
 [ApiController]
 [Route("api/[controller]")]
+[Authorize]
 public class JobController : ControllerBase
 {
     private readonly RecruitmentDbContext _context;
