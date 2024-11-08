@@ -6,7 +6,7 @@ using RecruitmentAPI.Models;
 
 [ApiController]
 [Route("api/[controller]")]
-[Authorize]
+// [Authorize]
 public class JobController : ControllerBase
 {
     private readonly RecruitmentDbContext _context;
